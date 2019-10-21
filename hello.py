@@ -2,14 +2,14 @@
 
 from flask import Flask
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
-@app.route('/')
+@APP.route('/')
 def index():
-    """ Affiche Hello"""
+    """ Affiche Hello """
 
     return "Hello Gens de Fitec-Faurecia!"
 
 if __name__ == "__main__":
-    """ function main"""
-    app.run(host="0.0.0.0", port=5000)
+    """ function main """
+    APP.run(host="0.0.0.0", port=5000)
