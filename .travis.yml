@@ -4,8 +4,8 @@ python:
 
 # command to install dependencies
 install:
-  - pipenv install pylint
+  - make prepare
 
 # command to run tests
 script:
-  - pylint
+  - make test 
